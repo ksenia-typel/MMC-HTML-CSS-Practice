@@ -5,7 +5,7 @@
 }
 
 body {
-	font-size: 36px;
+	font-size: 30px;
 	height: 100vh;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #045de9;
@@ -14,10 +14,6 @@ body {
 
 div {
 	background-color: lime;
-}
-
-p {
-	background-color: gold;
 }
 
 span {
