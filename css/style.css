@@ -1,26 +1,30 @@
 * {
-	box-sizing: border-box;
+	box-sizing: 0;
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 20px;
 	font-size: 36px;
-	height: 100vh;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Comfortaa', sans-serif;
+	color: #fff;
 	background-color: #333;
-	color: floralwhite;
-	overflow: hidden;
+	padding: 40px;
 }
 
+p {
+	color: lime;
+	margin-top: 20px;
+}
+
+p span {
+	color: tomato;
+	text-decoration: underline;
+}
 
 img {
-	width: 500px;
-	height: 500px;
-	border-radius: 50%;
-	opacity: 50%;
+	width: 800px;
+	border-radius: 25px;
+	margin: 0 auto;
+	display: block;
 }
