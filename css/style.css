@@ -42,3 +42,15 @@ body {
 	height: 50vw;
 	background-color: #0076e8;
 }
+
+p {
+	font-size: 24px;
+}
+
+span, b {
+color:black
+}
+
+p i {
+	color: red;
+}
