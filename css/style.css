@@ -26,3 +26,7 @@ div + p {
 div ~ p {
 	color: black;
 }
+
+/* Hierarchia Stylow  */
+
+/* Najwazniejszy jest atrybut style="" potem ID, potem klasa a na koncu selektor */
