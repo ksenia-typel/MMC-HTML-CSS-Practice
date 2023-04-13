@@ -10,47 +10,19 @@ body {
 	background-color: #333;
 }
 
-.box-1 {
-	height: 400px;
-	width: 400px;
-	background-color: gold;
+/* Kombinatory - dzialaja kaskadowo, w dol*/
+
+/* > Target na bezposrednie dzieci */
+div > p {
+	color: black;
 }
 
-.circle {
-	width: 300px;
-	height: 300px;
-	background-color: rgb(255, 0, 0, 0.3);
-	border-radius: 50%;
+/* + Target na  pierwszego bezposredni brat */
+div + p {
+	color: black;
 }
 
-.box-2 {
-	max-width: 800px;
-	min-width: 500px;
-	width: 100%;
-	height: 200px;
-	background-color: lime;
-}
-
-.box-3 {
-	width: 50vw;
-	height: 300px;
-	background-color: tomato;
-}
-
-.inside {
-	width: 50%;
-	height: 50vw;
-	background-color: #0076e8;
-}
-
-p {
-	font-size: 24px;
-}
-
-span, b {
-color:black
-}
-
-p i {
-	color: red;
+/* ~ Target na kazdego brata nie wazne co jest miedzy nimi */
+div ~ p {
+	color: black;
 }
