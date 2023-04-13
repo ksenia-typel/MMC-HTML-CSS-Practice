@@ -8,25 +8,22 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
 	background-color: #333;
+	font-size: 36px;
 }
 
-/* Kombinatory - dzialaja kaskadowo, w dol*/
-
-/* > Target na bezposrednie dzieci */
-div > p {
-	color: black;
+div p {
+	color: red;
 }
 
-/* + Target na  pierwszego bezposredni brat */
-div + p {
-	color: black;
+.child > p {
+	font-weight: bold;
+	text-decoration: line-through;
 }
 
-/* ~ Target na kazdego brata nie wazne co jest miedzy nimi */
-div ~ p {
-	color: black;
+#test ~ div {
+	background-color: blue;
 }
 
-/* Hierarchia Stylow  */
-
-/* Najwazniejszy jest atrybut style="" potem ID, potem klasa a na koncu selektor */
+main + p {
+	text-transform: uppercase;
+}
