@@ -5,34 +5,27 @@
 }
 
 body {
+	margin: 50px;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #333;
 	font-size: 36px;
 }
 
-.square {
-	width: 400px;
-	height: 670px;
-	background-color: white;
-	padding: 20px;
-	margin: 20px;
-	border: 5px solid gold;
-	border-radius: 50px;
-}
-/* Kolejnosc zapisu jak ponizej jest bardzo wazna ! */
-
-a:link {
-	color: lime;
+button {
+	border: none;
 }
 
-a:visited {
-	color: pink;
+.btn-1 {
+background-color: pink;
+padding: 10px 20px;
+border-radius: 6px;
+cursor: pointer;
+transition: 500ms; 
+/* 1 sekunda to 1000ms */
 }
 
-a:hover {
-	color: aqua;
-}
-
-a:active {
+.btn-1:hover {
 	background-color: gold;
+	box-shadow: 0px 0px 5px darkgoldenrod
+
 }
