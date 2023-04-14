@@ -1,29 +1,38 @@
 * {
-	box-sizing: 0;
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	color: #fff;
 	background-color: #333;
 	font-size: 36px;
 }
 
-div p {
-	color: red;
+.square {
+	width: 400px;
+	height: 670px;
+	background-color: white;
+	padding: 20px;
+	margin: 20px;
+	border: 5px solid gold;
+	border-radius: 50px;
+}
+/* Kolejnosc zapisu jak ponizej jest bardzo wazna ! */
+
+a:link {
+	color: lime;
 }
 
-.child > p {
-	font-weight: bold;
-	text-decoration: line-through;
+a:visited {
+	color: pink;
 }
 
-#test ~ div {
-	background-color: blue;
+a:hover {
+	color: aqua;
 }
 
-main + p {
-	text-transform: uppercase;
+a:active {
+	background-color: gold;
 }
