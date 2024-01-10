@@ -59,16 +59,19 @@ body {
 	left: 40%;
 	background-color: blue;
 	box-shadow: 0 0 15px blue;
+	border: solid rgb(2, 2, 178) 2px;
 }
 .red {
 	left: 50%;
 	background-color: red;
 	box-shadow: 0 0 15px red;
+	border: solid rgb(151, 2, 2) 2px;
 }
 .green {
 	left: 60%;
 	background-color: greenyellow;
 	box-shadow: 0 0 15px greenyellow;
+	border: solid rgb(89, 132, 25) 2px;
 }
 
 .btn-zoom:hover ~ .blue,
