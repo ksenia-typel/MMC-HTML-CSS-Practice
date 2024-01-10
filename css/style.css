@@ -74,24 +74,18 @@ body {
 	border: solid rgb(89, 132, 25) 2px;
 }
 
-.btn-zoom:hover ~ .blue,
-.btn-zoom:hover ~ .red,
-.btn-zoom:hover ~ .green {
+.btn-zoom:hover ~ .square {
 	width: 150px;
 	height: 150px;
 	transition: 2s;
 }
 
-.btn-move:hover ~ .blue,
-.btn-move:hover ~ .red,
-.btn-move:hover ~ .green {
+.btn-move:hover ~ .square {
 	top: 200px;
 	transition: 2s;
 }
 
-.btn-color:hover ~ .blue,
-.btn-color:hover ~ .red,
-.btn-color:hover ~ .green {
+.btn-color:hover ~ .square {
 	background-color: black;
 	box-shadow: 0 0 25px black;
 	border: solid white 2px;
