@@ -5,60 +5,92 @@
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	background-color: #333;
-	font-size: 36px;
+	font-size: 66px;
 	color: #fff;
 }
 
-.bg {
-	width: 100vw;
-	height: 100vh;
-	background-color: #ddd;
+.btn {
+	position: absolute;
+	top: 50px;
+	background-color: #333;
+	border: solid white 3px;
+	width: 120px;
+	height: 40px;
+	padding: 10px 30px;
+	color: white;
+	border-radius: 5px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transform: translateX(-50%);
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: black;
+	transition: 1s;
+}
+
+.btn-zoom {
+	left: 40%;
+}
+
+.btn-move {
+	left: 50%;
+}
+
+.btn-color {
+	left: 60%;
 }
 
 .square {
 	position: absolute;
-	top: 50px;
-	width: 60px;
-	height: 60px;
-	border: 3px solid black;
+	top: 150px;
+	width: 100px;
+	height: 100px;
 	transform: translateX(-50%);
-	cursor: pointer;
-}
-
-.red {
-	background-color: tomato;
-	left: 20%;
-}
-
-.red:hover ~ .bg {
-	background-color: tomato;
+	border-radius: 25px;
 }
 
 .blue {
-	background-color: royalblue;
 	left: 40%;
+	background-color: blue;
+	box-shadow: 0 0 15px blue;
 }
-
-.blue:hover ~ .bg {
-	background-color: royalblue;
+.red {
+	left: 50%;
+	background-color: red;
+	box-shadow: 0 0 15px red;
 }
-
 .green {
-	background-color: greenyellow;
 	left: 60%;
-}
-
-.green:hover ~ .bg {
 	background-color: greenyellow;
+	box-shadow: 0 0 15px greenyellow;
 }
 
-.gold {
-	background-color: gold;
-	left: 80%;
+.btn-zoom:hover ~ .blue,
+.btn-zoom:hover ~ .red,
+.btn-zoom:hover ~ .green {
+	width: 150px;
+	height: 150px;
+	transition: 2s;
 }
 
-.gold:hover ~ .bg {
-	background-color: gold;
+.btn-move:hover ~ .blue,
+.btn-move:hover ~ .red,
+.btn-move:hover ~ .green {
+	top: 200px;
+	transition: 2s;
+}
+
+.btn-color:hover ~ .blue,
+.btn-color:hover ~ .red,
+.btn-color:hover ~ .green {
+	background-color: black;
+	box-shadow: 0 0 25px black;
+	border: solid white 2px;
+	transition: 2s;
 }
