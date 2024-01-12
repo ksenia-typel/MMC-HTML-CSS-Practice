@@ -7,84 +7,36 @@
 body {
 	font-family: 'Nunito Sans', sans-serif;
 	background-color: #333;
+	height: 100vh;
 }
 
-.general {
-	border: solid black 2px;
-	position: absolute;
-	text-align: center;
-	line-height: 60px;
-}
-
-.long {
-	background-color: tomato;
-	top: 50px;
-	left: calc(50% - 400px);
-	width: 800px;
-	height: 60px;
-	transition: 1s;
-}
-
-.long:hover {
-	background-color: green;
-	scale: 2;
-	width: 400px;
-	left: calc(50% - 200px);
-}
-
-.short {
-	background-color: royalblue;
-	top: 180px;
-	left: calc(50% - 150px);
+.square {
 	width: 300px;
-	height: 60px;
-	border-radius: 25px;
-	transition: 1s linear;
+	height: 300px;
+	background-color: gold;
 }
 
-.short:hover {
-	rotate: 360deg;
-}
-
-.short2 {
-	background-color: yellow;
-	top: 300px;
-	width: 300px;
-	height: 60px;
-	border-radius: 10px;
-	left: calc(30% - 150px);
-	transition: 1s 1s ease-out;
-}
-
-.short:hover ~ .short2 {
-	rotate: 360deg;
-}
-
-.short3 {
-	background-color: greenyellow;
-	top: 300px;
-	width: 300px;
-	height: 60px;
-	border-radius: 10px;
-	left: calc(70% - 150px);
-	transition: 1s 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.short:hover ~ .short3 {
-	rotate: -360deg;
-}
-
-.empty {
-	background-color: none;
-	top: 60%;
-	left: 50%;
-	height: 200px;
-	width: 400px;
-	transform: translate(-50%, -50%);
-	transition: 1s;
-	line-height: 200px;
-}
-
-.empty:hover{
-	background-color: white;
+@media (min-width: 500px) {
+	.square {
+		background-color: royalblue;
 	}
+}
+
+@media (min-width: 700px) {
+	.square {
+		background-color: lime;
+	}
+}
+
+@media (min-width: 550px) and (max-width: 850px) {
+	.square {
+		width: 450px;
+	}
+}
+
+@media (min-width: 800px) {
+	body {
+		background-color: #861657;
+		background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+	}
+}
